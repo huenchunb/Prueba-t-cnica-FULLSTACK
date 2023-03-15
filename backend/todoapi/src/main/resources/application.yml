@@ -1,0 +1,17 @@
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  application:
+    name: todo-api
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: 1656
+    url: jdbc:postgresql://localhost:5432/todo
+  jpa:
+    database: postgresql
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
